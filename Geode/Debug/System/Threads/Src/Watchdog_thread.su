@@ -1,0 +1,6 @@
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	16	static
+../System/Threads/Src/Watchdog_thread.cpp:14:6:virtual void WatchdogThread::init()	16	static
+../System/Threads/Src/Watchdog_thread.cpp:18:6:virtual void WatchdogThread::loop()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Watchdog_thread.h:14:7:WatchdogThread::~WatchdogThread()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Watchdog_thread.h:14:7:virtual WatchdogThread::~WatchdogThread()	16	static

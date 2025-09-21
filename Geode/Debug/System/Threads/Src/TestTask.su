@@ -1,0 +1,7 @@
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	16	static
+../System/Threads/Src/TestTask.cpp:14:1:TestTask::TestTask()	16	static
+../System/Threads/Src/TestTask.cpp:18:6:virtual void TestTask::init()	24	static
+../System/Threads/Src/TestTask.cpp:23:6:virtual void TestTask::loop()	24	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/TestTask.h:15:7:TestTask::~TestTask()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/TestTask.h:15:7:virtual TestTask::~TestTask()	16	static

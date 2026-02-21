@@ -1,0 +1,4 @@
+../Core/Src/app_freertos.c:74:6:vApplicationStackOverflowHook	1
+../Core/Src/app_freertos.c:89:6:vApplicationMallocFailedHook	1
+../Core/Src/app_freertos.c:109:6:MX_FREERTOS_Init	1
+../Core/Src/app_freertos.c:152:6:StartDefaultTask	1

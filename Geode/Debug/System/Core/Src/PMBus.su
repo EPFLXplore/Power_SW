@@ -1,0 +1,47 @@
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:66:8:constexpr VinRegs::VinRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:74:8:constexpr IinRegs::IinRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:79:8:constexpr InputReadRegs::InputReadRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:86:8:constexpr InputPeakRegs::InputPeakRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:92:8:constexpr InputStatusRegs::InputStatusRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:97:8:constexpr InputConfigRegs::InputConfigRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:111:8:constexpr VoutRegs::VoutRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:123:8:constexpr IoutRegs::IoutRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:131:8:constexpr TonRegs::TonRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:138:8:constexpr ToffRegs::ToffRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:144:8:constexpr TimingRegs::TimingRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:159:8:constexpr RailConfigRegs::RailConfigRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:170:8:constexpr OutputStatusRegs::OutputStatusRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:179:8:constexpr OutputReadRegs::OutputReadRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:187:8:constexpr OutputPeakRegs::OutputPeakRegs()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:193:8:constexpr Rail::Rail()	16	static
+../System/Core/Src/PMBus.cpp:10:1:PMBus::PMBus(I2C_HandleTypeDef*, uint8_t)	24	static
+../System/Core/Src/PMBus.cpp:15:1:PMBus::~PMBus()	16	static
+../System/Core/Src/PMBus.cpp:19:7:float PMBus::decodeLinear16(uint16_t)	16	static
+../System/Core/Src/PMBus.cpp:23:10:uint16_t PMBus::encodeLinear16(float)	24	static
+../System/Core/Src/PMBus.cpp:31:10:uint16_t PMBus::encodeLinear11(float)	40	static
+../System/Core/Src/PMBus.cpp:63:7:float PMBus::decodeLinear11(uint16_t)	24	static
+../System/Core/Src/PMBus.cpp:83:19:HAL_StatusTypeDef PMBus::reset()	16	static
+../System/Core/Src/PMBus.cpp:87:19:HAL_StatusTypeDef PMBus::set(Cmd&, float)	56	static
+../System/Core/Src/PMBus.cpp:144:19:HAL_StatusTypeDef PMBus::get(Cmd&, float&)	48	static
+../System/Core/Src/PMBus.cpp:185:19:HAL_StatusTypeDef PMBus::securityCheck(Cmd&, float)	24	static
+../System/Core/Src/PMBus.cpp:212:26:HAL_StatusTypeDef PMBus::MaximumOutputVoltageChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:250:26:HAL_StatusTypeDef PMBus::OutputVoltageChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:271:26:HAL_StatusTypeDef PMBus::OutputOverVoltageWarningChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:288:26:HAL_StatusTypeDef PMBus::OutputOverVoltageFaultChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:308:26:HAL_StatusTypeDef PMBus::OutputUnderVoltageWarningChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:325:26:HAL_StatusTypeDef PMBus::OutputUnderVoltageFaultChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:345:26:HAL_StatusTypeDef PMBus::OutputOverCurrentWarningChecks(float)	32	static
+../System/Core/Src/PMBus.cpp:391:19:HAL_StatusTypeDef PMBus::selectPage(Rail&)	24	static
+../System/Core/Src/PMBus.cpp:400:6:void PMBus::setRUNpinState(Rail&, GPIO_PinState)	24	static
+../System/Core/Src/PMBus.cpp:429:15:GPIO_PinState PMBus::getRUNpinState(Rail&)	24	static
+../System/Core/Src/PMBus.cpp:459:19:HAL_StatusTypeDef PMBus::clearPeaks()	24	static
+../System/Core/Src/PMBus.cpp:466:19:HAL_StatusTypeDef PMBus::clearFaults()	24	static
+../System/Core/Src/PMBus.cpp:473:15:GPIO_PinState PMBus::getFAULTpin(Rail&)	24	static
+../System/Core/Src/PMBus.cpp:504:19:HAL_StatusTypeDef PMBus::processCallback()	32	static
+../System/Core/Src/PMBus.cpp:572:19:HAL_StatusTypeDef PMBus::callbackVOUT()	24	static
+../System/Core/Src/PMBus.cpp:612:19:HAL_StatusTypeDef PMBus::callbackIOUT()	24	static
+../System/Core/Src/PMBus.cpp:637:19:HAL_StatusTypeDef PMBus::callbackTEMP()	24	static
+../System/Core/Src/PMBus.cpp:666:19:HAL_StatusTypeDef PMBus::callbackINPUT()	24	static
+../System/Core/Src/PMBus.cpp:694:19:HAL_StatusTypeDef PMBus::callbackCML()	24	static
+../System/Core/Src/PMBus.cpp:729:19:HAL_StatusTypeDef PMBus::callbackMFRSpecific()	24	static
+../System/Core/Src/PMBus.cpp:766:19:HAL_StatusTypeDef PMBus::callbackPowerGood()	24	static

@@ -1,0 +1,9 @@
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	16	static
+../System/Debugging/Src/Shell.cpp:17:2:Shell::Shell(Terminal*, Console*)	24	static
+../System/Debugging/Src/Shell.cpp:23:7:virtual void Shell::init()	16	static
+../System/Debugging/Src/Shell.cpp:30:7:virtual void Shell::loop()	16	static
+../System/Debugging/Src/Shell.cpp:51:7:void Shell::USB_CDC_RxHandler(uint8_t*, uint32_t)	32	static
+../System/Debugging/Src/Shell.cpp:60:7:void Shell::receiveByte(char)	24	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Debugging/Inc/Shell.h:25:8:Shell::~Shell()	16	static
+/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Debugging/Inc/Shell.h:25:8:virtual Shell::~Shell()	16	static

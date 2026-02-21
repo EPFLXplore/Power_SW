@@ -1,0 +1,23 @@
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	16	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Console.h:31:20:bool UsbConfigured()	4	static
+D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Console.h:36:20:bool UsbNotBusy()	16	static
+../System/Debugging/Src/Console.cpp:21:1:Console::Console()	32	static,ignoring_inline_asm
+../System/Debugging/Src/Console.cpp:40:1:Console::~Console()	16	static
+../System/Debugging/Src/Console.cpp:40:1:virtual Console::~Console()	16	static
+../System/Debugging/Src/Console.cpp:52:6:virtual void Console::init()	16	static
+../System/Debugging/Src/Console.cpp:56:6:virtual void Console::loop()	88	static
+../System/Debugging/Src/Console.cpp:81:6:void Console::initialText()	16	static
+../System/Debugging/Src/Console.cpp:87:6:void Console::enqueueTx(const uint8_t*, uint32_t)	96	static
+../System/Debugging/Src/Console.cpp:95:6:void Console::resetTxBuffer()	16	static
+../System/Debugging/Src/Console.cpp:100:6:void Console::resetRxBuffer()	16	static
+../System/Debugging/Src/Console.cpp:106:6:void Console::enqueueRx(const uint8_t*, uint32_t)	96	static,ignoring_inline_asm
+../System/Debugging/Src/Console.cpp:116:12:BaseType_t Console::lock()	16	static
+../System/Debugging/Src/Console.cpp:120:12:BaseType_t Console::unlock()	16	static
+../System/Debugging/Src/Console.cpp:124:6:void Console::USBReceiveFromISR(uint8_t*, uint32_t)	24	static
+../System/Debugging/Src/Console.cpp:130:6:void Console::notifyTxCompleteFromISR()	24	static,ignoring_inline_asm
+../System/Debugging/Src/Console.cpp:136:6:void Console::print(const char*)	16	static
+../System/Debugging/Src/Console.cpp:140:6:)	36	static
+../System/Debugging/Src/Console.cpp:155:6:)	36	static
+../System/Debugging/Src/Console.cpp:175:6:)	36	static
+../System/Debugging/Src/Console.cpp:193:6:)	36	static

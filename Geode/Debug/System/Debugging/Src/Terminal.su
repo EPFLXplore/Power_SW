@@ -1,7 +1,0 @@
-/home/pedro/Pedro/EPFL/MA2/Geode/Geode_FW/System/Debugging/Inc/Terminal.h:25:7:bool CommandComponent::matches(const char*)	24	static
-../System/Debugging/Src/Terminal.cpp:17:1:Terminal::Terminal(Console*, Monitor*)	24	static
-../System/Debugging/Src/Terminal.cpp:21:6:void Terminal::execute(ShellCommand*, Console*)	40	static
-../System/Debugging/Src/Terminal.cpp:264:6:void Terminal::update_monitors(uint8_t, uint8_t)	32	static
-../System/Debugging/Src/Terminal.cpp:272:6:void Terminal::disable_monitors(Console*)	16	static
-../System/Debugging/Src/Terminal.cpp:289:13:void Terminal::resetParser()	16	static
-../System/Debugging/Src/Terminal.cpp:296:6:void Terminal::receiveByte(char)	24	static

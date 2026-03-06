@@ -13,7 +13,6 @@ RM := rm -rf
 -include USB_Device/App/subdir.mk
 -include System/Utils/Src/subdir.mk
 -include System/Threads/Src/subdir.mk
--include System/Debugging/Src/subdir.mk
 -include System/Core/Src/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
@@ -96,8 +95,8 @@ all: main-build
 main-build: Geode_FW.elf secondary-outputs
 
 # Tool invocations
-Geode_FW.elf Geode_FW.map: $(OBJS) $(USER_OBJS) D:\EPFL\Projects\Geode\Git\Geode_FW\STM32G483RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Geode_FW.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\EPFL\Projects\Geode\Git\Geode_FW\STM32G483RETX_FLASH.ld" -Wl,-Map="Geode_FW.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Geode_FW.elf Geode_FW.map: $(OBJS) $(USER_OBJS) C:\Users\Ennouri\local\ disc\ D\Etudes\ Hsan\ (Fianal\ project\ Final,Final)\EPFL\Master\Xplore_MAKE\Power_SW\Geode_FW\STM32G483RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "Geode_FW.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Ennouri\local disc D\Etudes Hsan (Fianal project Final,Final)\EPFL\Master\Xplore_MAKE\Power_SW\Geode_FW\STM32G483RETX_FLASH.ld" -Wl,-Map="Geode_FW.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

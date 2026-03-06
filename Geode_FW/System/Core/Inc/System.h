@@ -10,7 +10,7 @@
 
 #include "Watchdog_thread.h"
 #include "TestTask.h"
-#include "Console.h"
+//#include "Console.h"
 
 class System {
 public:
@@ -18,7 +18,7 @@ public:
 	static void selectCallback(I2C_HandleTypeDef *pi2c);
 
 
-	static Console* consoleThread;
+	//static Console* consoleThread;
 	static WatchdogThread* watchdogThread;
 	static TestTask* test;
 };

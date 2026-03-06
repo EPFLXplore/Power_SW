@@ -1,7 +1,7 @@
 System/Core/Src/Interface.o: ../System/Core/Src/Interface.cpp \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/System.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Watchdog_thread.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/System.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Watchdog_thread.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
@@ -57,29 +57,13 @@ System/Core/Src/Interface.o: ../System/Core/Src/Interface.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Utils/Inc/Operators.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/TestTask.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/INA239.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Monitor.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Console.h \
- ../USB_Device/App/usb_device.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- ../USB_Device/Target/usbd_conf.h ../USB_Device/App/usbd_cdc_if.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h \
- ../Core/Inc/spi.h ../Core/Inc/main.h ../Core/Inc/tim.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h \
- ../Core/Inc/i2c.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Console.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus_config.h
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/System.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Watchdog_thread.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h:
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Utils/Inc/Operators.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h \
+ ../Core/Inc/spi.h ../Core/Inc/main.h ../Core/Inc/tim.h
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/System.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Watchdog_thread.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -135,26 +119,9 @@ D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Utils/Inc/Operators.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/TestTask.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/INA239.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Monitor.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Console.h:
-../USB_Device/App/usb_device.h:
-../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-../USB_Device/Target/usbd_conf.h:
-../USB_Device/App/usbd_cdc_if.h:
-../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
-../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
-../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Threads/Inc/Thread.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Utils/Inc/Operators.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/main.h:
 ../Core/Inc/tim.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus.h:
-../Core/Inc/i2c.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Debugging/Inc/Console.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/PMBus_config.h:

@@ -13,8 +13,8 @@
 #include "adc.h"
 #include "iwdg.h"
 
-Console* console = nullptr;
-Console* System::consoleThread = nullptr;
+//Console* console = nullptr;
+//Console* System::consoleThread = nullptr;
 WatchdogThread* System::watchdogThread = nullptr;
 TestTask* System::test = nullptr;
 
@@ -26,14 +26,14 @@ void System::init(){
 	watchdogThread->start();
 
     ////Allocate memory for the custom shell
-    consoleThread = new Console();
-    console = System::consoleThread;
+    //consoleThread = new Console();
+    //console = System::consoleThread;
 
 	//Allocate memory for the test thread
 	test = new TestTask();
 
 	//Creating tasks
-	console->start();
+	//console->start();
 	test->start();
 }
 void System::selectCallback(I2C_HandleTypeDef *pi2c){
@@ -45,6 +45,6 @@ void System::selectCallback(I2C_HandleTypeDef *pi2c){
         //status = pmbus3->module_problem = true;
     }
     if (status != HAL_OK){
-    	console->printf_error("Error: SMBUS stack error\r\n");
+    	//console->printf_error("Error: SMBUS stack error\r\n");
     }
 }

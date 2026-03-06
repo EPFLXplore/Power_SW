@@ -10,7 +10,6 @@
 
 #include "Thread.h"
 #include "INA239.h"
-#include "PMBus.h"
 
 
 class TestTask : public Thread {
@@ -23,7 +22,7 @@ public:
 	void LTC3889_Recover();
 private:
 	INA239 * inaSens;
-	PMBus * pmbus;
+	//PMBus * pmbus;
 	bool cleared = false;
 };
 

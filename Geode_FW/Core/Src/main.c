@@ -31,7 +31,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -64,7 +64,12 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+/*int _write(int file, char *ptr, int len) {
+  for (int i = 0; i < len; i++) {
+    ITM_SendChar(*ptr++);
+  }
+  return len;
+}*/
 /* USER CODE END 0 */
 
 /**
@@ -108,7 +113,24 @@ int main(void)
   MX_TIM3_Init();
   MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
+  	GPIO_InitTypeDef GPIO_InitStruct = {0};
 
+    // Enable the clock for GPIOA
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+
+    // Configure PA12 (USB D+) as a standard output pin
+    GPIO_InitStruct.Pin = GPIO_PIN_12;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    // Drive the pin low to simulate disconnecting the USB cable
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);
+
+    // Wait for the host computer to register the disconnection
+    // HAL_Delay works fine here because the FreeRTOS scheduler hasn't started yet
+    HAL_Delay(15);
   /* USER CODE END 2 */
 
   /* Init scheduler */

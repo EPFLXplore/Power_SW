@@ -1,5 +1,5 @@
 System/Utils/Src/Operators.o: ../System/Utils/Src/Operators.cpp \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Utils/Inc/Operators.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Utils/Inc/Operators.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -11,7 +11,7 @@ System/Utils/Src/Operators.o: ../System/Utils/Src/Operators.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Utils/Inc/Operators.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Utils/Inc/Operators.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:

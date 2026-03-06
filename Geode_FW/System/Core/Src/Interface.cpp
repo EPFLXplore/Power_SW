@@ -17,11 +17,11 @@ void InterfaceSystemInit(){
 }
 
 void InterfaceUSBReceiveFromISR(uint8_t* Buf, uint32_t Len){
-	System::consoleThread->USBReceiveFromISR(Buf, Len);
+	//System::consoleThread->USBReceiveFromISR(Buf, Len);
 }
 
 void InterfaceNotifyTxCompleteFromISR(){
-	System::consoleThread->notifyTxCompleteFromISR();
+	//System::consoleThread->notifyTxCompleteFromISR();
 }
 
 #ifdef __cplusplus

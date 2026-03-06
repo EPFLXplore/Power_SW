@@ -48,7 +48,7 @@ USB_Device/App/usbd_cdc_if.o: ../USB_Device/App/usbd_cdc_if.c \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/Interface.h
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/Interface.h
 ../USB_Device/App/usbd_cdc_if.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
@@ -98,4 +98,4 @@ USB_Device/App/usbd_cdc_if.o: ../USB_Device/App/usbd_cdc_if.c \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/Interface.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/Interface.h:

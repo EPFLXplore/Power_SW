@@ -54,7 +54,7 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
  ../USB_Device/App/usb_device.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  ../USB_Device/Target/usbd_conf.h \
- D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/Interface.h
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/Interface.h
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -111,4 +111,4 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
 ../USB_Device/App/usb_device.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 ../USB_Device/Target/usbd_conf.h:
-D:/EPFL/Projects/Geode/Git/Geode_FW/System/Core/Inc/Interface.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/Interface.h:

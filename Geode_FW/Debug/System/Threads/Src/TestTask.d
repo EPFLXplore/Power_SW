@@ -1,6 +1,6 @@
 System/Threads/Src/TestTask.o: ../System/Threads/Src/TestTask.cpp \
- C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h \
- C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Thread.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
@@ -37,13 +37,10 @@ System/Threads/Src/TestTask.o: ../System/Threads/Src/TestTask.cpp \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_crc.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_crc_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_iwdg.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h \
@@ -53,14 +50,16 @@ System/Threads/Src/TestTask.o: ../System/Threads/Src/TestTask.cpp \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Utils/Inc/Operators.h \
- C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Utils/Inc/Operators.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Core/Inc/INA239.h \
  ../Core/Inc/spi.h ../Core/Inc/main.h ../Core/Inc/tim.h \
- C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/System.h \
- C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Watchdog_thread.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Core/Inc/System.h \
+ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Watchdog_thread.h \
  ../USB_Device/App/usbd_cdc_if.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
@@ -69,8 +68,8 @@ System/Threads/Src/TestTask.o: ../System/Threads/Src/TestTask.cpp \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
-C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:
-C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -107,13 +106,10 @@ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPF
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_crc.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_crc_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h:
-../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_iwdg.h:
-../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:
-../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h:
@@ -123,16 +119,18 @@ C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPF
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Utils/Inc/Operators.h:
-C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Utils/Inc/Operators.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Core/Inc/INA239.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/main.h:
 ../Core/Inc/tim.h:
-C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/System.h:
-C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Watchdog_thread.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Core/Inc/System.h:
+C:/Users/Ennouri/local\ disc\ D/Etudes\ Hsan\ (Fianal\ project\ Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Watchdog_thread.h:
 ../USB_Device/App/usbd_cdc_if.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:

@@ -21,11 +21,10 @@
 #include "cmsis_os.h"
 #include "adc.h"
 #include "crc.h"
-#include "fdcan.h"
-#include "i2c.h"
 #include "iwdg.h"
 #include "spi.h"
 #include "tim.h"
+#include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -64,12 +63,12 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/*int _write(int file, char *ptr, int len) {
+int _write(int file, char *ptr, int len) {
   for (int i = 0; i < len; i++) {
     ITM_SendChar(*ptr++);
   }
   return len;
-}*/
+}
 /* USER CODE END 0 */
 
 /**
@@ -102,16 +101,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CRC_Init();
-  MX_FDCAN1_Init();
-  MX_FDCAN2_Init();
-  MX_I2C2_Init();
-  MX_I2C3_Init();
   MX_SPI1_Init();
   MX_SPI2_Init();
-  MX_SPI3_Init();
   MX_ADC1_Init();
   MX_TIM3_Init();
   MX_IWDG_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   	GPIO_InitTypeDef GPIO_InitStruct = {0};
 

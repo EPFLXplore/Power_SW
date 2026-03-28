@@ -1,9 +1,7 @@
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	16	static
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	16	static
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h:67:11:uint16_t INA239::getShuntCal()	16	static
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h:68:11:uint16_t INA239::getConfig()	16	static
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	16	static
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	16	static
 ../System/Threads/Src/TestTask.cpp:16:1:TestTask::TestTask()	16	static
-../System/Threads/Src/TestTask.cpp:20:6:virtual void TestTask::init()	24	static
-../System/Threads/Src/TestTask.cpp:27:6:virtual void TestTask::loop()	704	static
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:TestTask::~TestTask()	16	static
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:virtual TestTask::~TestTask()	16	static
+../System/Threads/Src/TestTask.cpp:20:6:virtual void TestTask::init()	32	static
+../System/Threads/Src/TestTask.cpp:55:6:virtual void TestTask::loop()	56	static
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:TestTask::~TestTask()	16	static
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:virtual TestTask::~TestTask()	16	static

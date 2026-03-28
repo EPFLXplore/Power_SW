@@ -7,7 +7,6 @@
 
 
 #include "System.h"
-#include "i2c.h"
 #include "spi.h"
 #include "tim.h"
 #include "adc.h"
@@ -36,7 +35,7 @@ void System::init(){
 	//console->start();
 	test->start();
 }
-void System::selectCallback(I2C_HandleTypeDef *pi2c){
+/*void System::selectCallback(I2C_HandleTypeDef *pi2c){
 
     HAL_StatusTypeDef status;
     if (pi2c == &hi2c2){
@@ -47,4 +46,4 @@ void System::selectCallback(I2C_HandleTypeDef *pi2c){
     if (status != HAL_OK){
     	//console->printf_error("Error: SMBUS stack error\r\n");
     }
-}
+}*/

@@ -18,9 +18,37 @@ TestTask::TestTask() : Thread("TestingTask", (osPriority)osPriorityNormal5){
 }
 
 void TestTask::init(){
-	inaSens = new INA239(&hspi1, GPIOA, GPIO_PIN_4);
-	inaSens->initialize();
+	// The 5V
+	inaSensors[0] = new INA239(&hspi1, GPIOC, GPIO_PIN_8);
+	// The 15V
+	inaSensors[1] = new INA239(&hspi1, GPIOC, GPIO_PIN_10);
+	// The 24V
+	inaSensors[2] = new INA239(&hspi1, GPIOC, GPIO_PIN_11);
+	// The battery
+	inaSensors[3] = new INA239(&hspi1, GPIOC, GPIO_PIN_12);
 
+	// Initialize all 4 sensors
+	for(int i = 0; i < 4; i++) {
+		inaSensors[i]->initialize();
+	}
+	//osDelay(2000);
+
+	// Check the shunt cal configuration
+	//char dbg[512];
+	//uint16_t dbg_len = 0;
+	// Loop through all 4 sensors to read and format their data
+	//for(int i = 0; i < 4; i++) {
+		// Changed from float to uint16_t
+	//	uint16_t shunt_cal = inaSensors[i]->getShuntCal();
+	//	uint16_t config = inaSensors[i]->getConfig();
+	//	printf("SHUNT_CAL: %u (exp 4000), CONFIG: 0x%04X (exp bit4=1)\r\n",shunt_cal, config);
+		// Safely append to the buffer, advancing the pointer by 'len'
+		//dbg_len += snprintf(dbg + dbg_len, sizeof(dbg) - dbg_len,
+		//	"SHUNT_CAL: %u (exp 4000), CONFIG: 0x%04X (exp bit4=1)\r\n",shunt_cal, config);
+	//}
+	//CDC_Transmit_FS((uint8_t*)dbg, dbg_len);
+	// Wait 2 seconds before the next reading cycle
+	//osDelay(2000);
 	//pmbus = new PMBus(&hi2c2, 0x7C);
 }
 
@@ -30,71 +58,57 @@ void TestTask::loop(){
 	//char my_message[] = "Hello from STM32!\r\n";
 	//CDC_Transmit_FS((uint8_t*)my_message, strlen(my_message));
 
-	uint16_t shunt_cal = inaSens->getShuntCal();
-	uint16_t config    = inaSens->getConfig();
-	char dbg[128];
-	uint16_t dbg_len = snprintf(dbg, sizeof(dbg),
-		"SHUNT_CAL: %u (exp 4000), CONFIG: 0x%04X (exp bit4=1)\r\n",shunt_cal, config);
-	CDC_Transmit_FS((uint8_t*)dbg, dbg_len);
+	//char buffer[512];
+	//uint16_t len = 0;
+	// Loop through all 4 sensors to read and format their data
+	static const char* sensor_names[4] = {"5V", "15V", "24V", "V_batt"};
+	static const float V_offset_base[4] = {0.0f, 0.0f, 0.0f, 0.455f};
+	static const float V_offset_slope[4] = {0.0f, 0.0f, 0.0f, -0.0616f};
+
+	// Static current offsets
+	static const float Current_offset[4] = {0.0f, 0.0f, 0.0f, -0.30145f};
+	for(int i = 0; i < 4; i++) {
+		// 1. Get current first and apply its static calibration
+		float current = inaSensors[i]->getCurrent() * Current_offset[i];
+
+		// 2. Calculate the dynamic voltage offset based on the live current
+		float dynamic_v_offset = V_offset_base[i] + (V_offset_slope[i] * current);
+
+		// 3. Get voltage and apply the newly calculated dynamic offset
+		float voltage = inaSensors[i]->getVoltage() + dynamic_v_offset;
+
+		printf("Sensor %s -> Cur: %.3f A, Vol: %.3f V\r\n", sensor_names[i], current, voltage);
+		fflush(stdout); // Forces the ITM to transmit immediately
+		// Safely append to the buffer, advancing the pointer by 'len'
+	//	len += snprintf(buffer + len, sizeof(buffer) - len,
+	//					"Sensor %d -> Cur: %.3f A, Vol: %.3f V\r\n",
+	//					i + 1, current, voltage);
+	}
+
+	// Add a visual separator between the 2-second readings
+	//len += snprintf(buffer + len, sizeof(buffer) - len, "-----------------------------------\r\n");
+	// Transmit the complete buffer over USB
+	//CDC_Transmit_FS((uint8_t*)buffer, len);
+	// Wait 2 seconds before the next reading cycle
+	osDelay(2000);
+
 	// Read the values from the sensor
-	float current = inaSens->getCurrent();
-	float voltage = inaSens->getVoltage();
+	//float current = inaSens->getCurrent();
+	//float voltage = inaSens->getVoltage();
 	//float temp = inaSens->getTemperature();
 	//float power = inaSens->getPower();
 	//float shuntvoltage = inaSens->getShuntVoltage();
-
-
 	// Create a buffer large enough to hold the formatted string
-	char buffer[512];
-
-	// Format the floats into the buffer (using 3 decimal places for V/W, 2 for Temp)
+	//char buffer[512];
 	//uint16_t len = snprintf(buffer, sizeof(buffer),
-	//						"Voltage: %.3f V, current: %.3f A, ShuntVoltage %.3f V, power: %.3f W, Temp: %.2f C\r\n",
-	//						voltage, current, power,shuntvoltage, temp);
-	uint16_t len = snprintf(buffer, sizeof(buffer),
-								"current: %.3f A ,Voltage: %.3f V",
-								current, voltage);
+	//							"current: %.3f A ,Voltage: %.3f V",
+	//							current, voltage);
 
 	// Transmit the buffer over USB
-	CDC_Transmit_FS((uint8_t*)buffer, len);
+	//CDC_Transmit_FS((uint8_t*)buffer, len);
 
 	// Wait 2 seconds before the next reading
-	osDelay(2000);
-	//console->printf("Power: %f \r\n", inaSens->getPower());
-	//console->printf("Temperature: %f \r\n", inaSens->getTemperature());
-	//console->printf("Voltage: %f \r\n", inaSens->getVoltage());
 	//osDelay(2000);
-
-	//HAL_StatusTypeDef status = HAL_I2C_IsDeviceReady(&hi2c2, (0x7C<<1), 5, 1000);
-	//console->printf("Device Ready: %d \r\n", status);
-	//uint16_t value = 3;
-	//status = HAL_I2C_Mem_Read(&hi2c2, (0x5A<<1), 0x88, I2C_MEMADD_SIZE_8BIT, reinterpret_cast<uint8_t*>(&value), sizeof(value), 300);
-	//osDelay(100);
-	//console->printf("Status: %d, Raw VIN: 0x%04X\r\n", status, value);
-	//ClearFaultsOnce();
-	//osDelay(10000);
-	//if (HAL_I2C_IsDeviceReady(&hi2c2, (0x7C << 1), 2, 10) == HAL_OK) {
-	//	console->printf("I2C device found at 0x7C\r\n");
-	//}
-	/*
-	uint8_t val;
-	uint8_t cmd = CMD_STATUS_BYTE;
-	HAL_StatusTypeDef status;
-	status = HAL_I2C_Master_Transmit(&hi2c2, (0x7C << 1), &cmd, 1, 100);
-	console->printf("STATUS_HAL = %d\r\n", status);
-	status = HAL_I2C_Master_Receive(&hi2c2, (0x7C << 1), &val, 1, 100);
-	console->printf("STATUS_HAL = %d\r\n", status);
-	console->printf("STATUS_BYTE = 0x%02X\r\n", val);
-	*/
-
-	//uint8_t fault0 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4);
-	//uint8_t fault1 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_10);
-	//uint8_t alert = HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_2);
-
-	//console->printf("FAULT0 = %d, FAULT1 = %d, ALERT = %d \r\n", fault0, fault1, alert);
-	//LTC3889_Diag_WP();
-	//osDelay(10000);
-	//osDelay(10000);
 }
 
 /*

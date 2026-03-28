@@ -21,7 +21,8 @@ public:
 	void ClearFaultsOnce();
 	void LTC3889_Recover();
 private:
-	INA239 * inaSens;
+	// Array to hold 4 INA239 objects
+		INA239 * inaSensors[4];
 	//PMBus * pmbus;
 	bool cleared = false;
 };

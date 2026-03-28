@@ -83,7 +83,7 @@ float INA239::getCurrent() {
 	int16_t raw_current = (int16_t) get(INA239_CURRENT_REG);
 	// Calculate the Current LSB: MAX_CURRENT / 2^15
 	float current_lsb = MAX_CURRENT / 32768.0f;
-	return raw_current * current_lsb* (-3.35);
+	return raw_current * current_lsb* (-3.34);
 	// To be changed depending on the board
 }
 
@@ -121,8 +121,9 @@ bool INA239::write(uint8_t reg, uint8_t *data, uint8_t size) {
 		tx_buffer[i+1] = data[size-i-1];
 	}
 
+	CS_low();
 	HAL_StatusTypeDef status = HAL_SPI_Transmit(spi, tx_buffer, size+1, 10 ); // 10 / portTICK_PERIOD_MS
-
+	CS_high();
 
 	return status == HAL_OK;
 }
@@ -131,7 +132,9 @@ bool INA239::read(uint8_t reg, uint8_t *data, uint8_t size) {
 	uint8_t rx_buffer[4];
 	rx_buffer[0] = (reg << 2) | 0b01;
 
+	CS_low();
 	HAL_StatusTypeDef status = HAL_SPI_TransmitReceive(spi, rx_buffer, rx_buffer, size+1, 100 ); // 100 / portTICK_PERIOD_MS
+	CS_high();
 
 	for(uint8_t i = 0; i < size; i++) {
 		data[i] = rx_buffer[size-i];

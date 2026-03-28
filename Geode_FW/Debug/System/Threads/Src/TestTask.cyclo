@@ -1,9 +1,7 @@
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	1
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	1
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h:67:11:uint16_t INA239::getShuntCal()	1
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Core/Inc/INA239.h:68:11:uint16_t INA239::getConfig()	1
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:Thread::~Thread()	1
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/Thread.h:24:10:virtual Thread::~Thread()	1
 ../System/Threads/Src/TestTask.cpp:16:1:TestTask::TestTask()	1
-../System/Threads/Src/TestTask.cpp:20:6:virtual void TestTask::init()	1
-../System/Threads/Src/TestTask.cpp:27:6:virtual void TestTask::loop()	1
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:TestTask::~TestTask()	1
-C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:virtual TestTask::~TestTask()	1
+../System/Threads/Src/TestTask.cpp:20:6:virtual void TestTask::init()	2
+../System/Threads/Src/TestTask.cpp:55:6:virtual void TestTask::loop()	2
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:TestTask::~TestTask()	1
+C:/Users/Ennouri/local disc D/Etudes Hsan (Fianal project Final,Final)/EPFL/Master/Xplore_MAKE/Cloned/Power_SW/Geode_FW/System/Threads/Inc/TestTask.h:15:7:virtual TestTask::~TestTask()	1

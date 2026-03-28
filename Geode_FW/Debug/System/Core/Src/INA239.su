@@ -1,5 +1,7 @@
 ../System/Core/Src/INA239.cpp:16:1:INA239::INA239(SPI_HandleTypeDef*, GPIO_TypeDef*, uint16_t)	24	static
 ../System/Core/Src/INA239.cpp:20:1:INA239::~INA239()	16	static
+../System/Core/Src/INA239.cpp:23:13:void INA239::CS_low()	16	static
+../System/Core/Src/INA239.cpp:24:13:void INA239::CS_high()	16	static
 ../System/Core/Src/INA239.cpp:26:6:void INA239::initialize()	24	static
 ../System/Core/Src/INA239.cpp:70:10:uint16_t INA239::get(uint8_t)	24	static
 ../System/Core/Src/INA239.cpp:76:7:float INA239::getVoltage()	16	static
@@ -9,4 +11,4 @@
 ../System/Core/Src/INA239.cpp:102:7:float INA239::getPower()	24	static
 ../System/Core/Src/INA239.cpp:112:6:bool INA239::set(uint8_t, uint16_t)	16	static
 ../System/Core/Src/INA239.cpp:116:6:bool INA239::write(uint8_t, uint8_t*, uint8_t)	32	static
-../System/Core/Src/INA239.cpp:130:6:bool INA239::read(uint8_t, uint8_t*, uint8_t)	48	static
+../System/Core/Src/INA239.cpp:131:6:bool INA239::read(uint8_t, uint8_t*, uint8_t)	48	static

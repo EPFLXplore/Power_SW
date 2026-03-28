@@ -15,7 +15,7 @@
 class System {
 public:
 	static void init();
-	static void selectCallback(I2C_HandleTypeDef *pi2c);
+	//static void selectCallback(I2C_HandleTypeDef *pi2c);
 
 
 	//static Console* consoleThread;
